@@ -33,6 +33,13 @@ group :production do
   gem 'pg', '0.12.2'
 end
 
+# To avoid the rails console borking out, include minitest (gmb)
+gem 'minitest', '4.7.1'
+
+# A hail Mary attempt...
+# I'm having a helluva time with execjs at 1.4.0, so was hoping...
+gem 'execjs', '1.3.0'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
